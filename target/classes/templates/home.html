@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+ <style>
+ body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    background-color: #5e057e;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.dashboard__title {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.dashboard__user {
+    margin-top: 20px;
+}
+
+.dashboard__user-name {
+    font-size: 50px;
+    color: #c299d0;
+}
+ 
+ 
+ </style>
+</head>
+
+<body>
+
+<div class="dashboard">
+        <h1 class="dashboard__title">Welcome to the Dashboard</h1>
+        <div class="dashboard__user">
+            <h2 th:text="${userdetail.fullname}" class="dashboard__user-name">User's Name</h2>
+        </div>
+    </div>
+<span sec:authorize="isAuthenticated"><a th:href="@{/logout}">Logout</a></span>
+</body>
+</html>

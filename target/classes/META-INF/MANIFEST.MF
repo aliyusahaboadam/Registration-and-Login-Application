@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: USER
+Build-Jdk: 17.0.7
+Implementation-Title: customloginapplication
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: customlogin
+Implementation-URL: https://spring.io/projects/spring-boot/customloginap
+ plication
+Created-By: Maven Integration for Eclipse
+
